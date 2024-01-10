@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import data from "./data.json";
 
-export default function Restaurantrating() {
+export default function Restaurants() {
   const [searchTerm, setSearchTerm] = useState("");
   const [minRating, setMinRating] = useState(0);
 
@@ -33,6 +33,7 @@ export default function Restaurantrating() {
           max={5}
           step={0.5}
           value={minRating}
+          placeholder= {0}
           onChange={(e) => setMinRating(parseFloat(e.target.value))}
         /> </label>
         </div>

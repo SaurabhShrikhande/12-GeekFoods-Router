@@ -1,4 +1,4 @@
-function Card(){
+function HomeCard(){
     return(
  <div style={{width:"100vw",}}>
     <div style={{display:"flex", flexWrap:"wrap", justifyContent:"center"}}>
@@ -76,4 +76,4 @@ function Card(){
 )
 }
 
-export default Card;
+export default HomeCard;

@@ -1,4 +1,5 @@
-function Main(){
+import HomeCard from "./HomeCard";
+function Home(){
 
     return(<div >
      <div style={{minHeight:"100vh", backgroundImage:"url('https://images.unsplash.com/photo-1604014237800-1c9102c219da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80')" , display:"flex", alignItems:"center", justifyContent:"center"}}>
@@ -26,10 +27,13 @@ function Main(){
                     <button style={{backgroundColor:"blue", border:"none", color:"white", padding:"10px 40px", borderRadius:"5px"}}>Get In Touch</button>
                     </div>
                 </div>
-
+         
             </div>
         </div>
+
+        <HomeCard/>
+                 
         </div>)
 }
 
-export default Main;
+export default Home;

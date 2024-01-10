@@ -1,20 +1,20 @@
 import Header from "./Header";
-// import Footer from './Footer';
+ import Footer from './Footer';
+import { Outlet } from "react-router-dom";
+
 
 export default function Layout(){
     return ( <div>
 
-<Header
+  <Header
     logo = "https://flowbite.com/docs/images/logo.svg"
     title = "GeekFoods"
-     home = "Home"
-     quote = "Quote" 
-     resturants = "Resturants"
-     foods = "Foods"
-     contact = "Contact"
     />
 
-       {/* <Footer /> */}
+      <Outlet/>
+      
+
+       <Footer/>
 
         </div> );
 }
